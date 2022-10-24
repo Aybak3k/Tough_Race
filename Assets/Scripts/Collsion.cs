@@ -8,7 +8,7 @@ public class Collsion : MonoBehaviour
         if (collisionInfo.collider.tag == "Obstacle")
         {
             movement.enabled = false;
-            Debug.Log(collisionInfo.collider);
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }

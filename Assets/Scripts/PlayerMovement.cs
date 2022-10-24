@@ -8,7 +8,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate ()
     {
+        // ...
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+
+
+        // Movement Input
         if (Input.GetKey("d"))
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
@@ -16,6 +20,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+
+
+        // End Game on Fall
+        if (transform.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
