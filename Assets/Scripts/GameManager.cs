@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject completeLevelUI;
+
     bool gameHasEnded = false;
 
     public void EndGame ()
@@ -12,6 +14,11 @@ public class GameManager : MonoBehaviour
             gameHasEnded = true;
             Invoke("Restart", 1f);
         }
+    }
+
+    public void CompleteLevel ()
+    {
+        completeLevelUI.SetActive(true);
     }
 
     void Restart ()
@@ -24,3 +31,4 @@ public class GameManager : MonoBehaviour
 // TODOs
 // add audio:- https://www.youtube.com/watch?v=rBwXhwilb5k&list=RDMMvadssi77q-U&index=27 - XD without any cheat codes
 // Create Night Scene
+// git savepoint
