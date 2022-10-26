@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Welcone.unity
+    guid: 3733bbe92fa1b0240b4a683763cff125
+  - enabled: 1
     path: Assets/Scenes/Level 01.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Level 02.unity
     guid: c2bc1239ed0a5cd4fa7e25f27d48b4e0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 1ffbe40581691e3479f5806580a233fb
   m_configObjects: {}
