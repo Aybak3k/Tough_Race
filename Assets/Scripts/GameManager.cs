@@ -26,8 +26,3 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
-
-
-// TODOs
-    // add audio:- https://www.youtube.com/watch?v=rBwXhwilb5k&list=RDMMvadssi77q-U&index=27 - XD without any cheat codes
-    // Create Night Scene
