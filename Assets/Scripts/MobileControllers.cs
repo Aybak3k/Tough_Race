@@ -14,7 +14,8 @@ public class MobileControllers : MonoBehaviour
 
     public void BtnMoveLeft()
     {
-        rb.AddForce(-(sidewaysForce * 3) * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        rb.AddForce(-(sidewaysForce * 30) * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        Debug.Log("Nope");
     }
 
     public void BtnMoveRight()
